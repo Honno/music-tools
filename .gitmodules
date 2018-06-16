@@ -1,0 +1,6 @@
+[submodule "extract/thehylia"]
+	path = extract/thehylia
+	url = https://github.com/obskyr/thehylia
+[submodule "extract/khinsider"]
+	path = extract/khinsider
+	url = https://github.com/obskyr/khinsider
