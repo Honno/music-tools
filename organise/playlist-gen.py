@@ -21,7 +21,7 @@ if __name__ == "__main__":
                 for folder in folders:
                     try:
                         sub_playlist = open(root+'/'+folder+'/'+PLAYLIST_FILE, 'r')
-                        print("Sub playlist file found, adding to current playlist")
+                        print("Sub playlist file found in {}, adding to current playlist".format(folder))
                         for song in sub_playlist:
                             playlist.write(folder+'/'+song)
                         sub_playlist.close()
