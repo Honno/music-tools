@@ -10,8 +10,8 @@ def is_audio(name):
 
 if __name__ == "__main__":
     for root, folders, files in os.walk('.', topdown=False):
+        print("\nIn {}".format(root))
         if not root.startswith('./.') and PLAYLIST_FILE not in files:
-            print("\nIn {}".format(root))
             with open(root+'/'+PLAYLIST_FILE, 'w+') as playlist:
                 print("No playlist file found, creating one")
                 audio_files = filter(is_audio, files)
